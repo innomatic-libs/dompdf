@@ -3,7 +3,7 @@
  * @package dompdf
  * @link    http://www.dompdf.com/
  * @author  Benj Carson <benjcarson@digitaljunkies.ca>
- * @author  Fabien Ménager <fabien.menager@gmail.com>
+ * @author  Fabien Mï¿½nager <fabien.menager@gmail.com>
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  * @version $Id: autoload.inc.php 448 2011-11-13 13:00:03Z fabien.menager $
  */
@@ -16,6 +16,7 @@
  *
  * @param string $class
  */
+
 function DOMPDF_autoload($class) {
   $filename = DOMPDF_INC_DIR . "/" . mb_strtolower($class) . ".cls.php";
   
@@ -30,7 +31,8 @@ if ( function_exists("spl_autoload_register") ) {
   
   // No functions currently in the stack. 
   if ( !DOMPDF_AUTOLOAD_PREPEND || $funcs === false ) {
-    spl_autoload_register($autoload); 
+    spl_autoload_register($autoload, true, true); 
+      //spl_autoload_register($autoload); 
   }
   
   // If PHP >= 5.3 the $prepend argument is available
