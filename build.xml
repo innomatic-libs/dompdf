@@ -4,18 +4,18 @@
 
    dompdf build file
 
-   Copyright (c) 2013 Innoteam S.r.l. All rights reserved.
+   Copyright (c) 2013-2014 Innoteam S.r.l. All rights reserved.
 
   =======================================================================
 -->
 <project name="dompdf" basedir="." default="package">
 
 	<property name="name" value="dompdf" />
-	<property name="version" value="1.0" />
+	<property name="version" value="0.6.0-2" />
 
 	<target name="sources">
 		<tar destfile="${basedir}/build/${name}-src-${version}.tgz" compression="gzip">
-			<tarfileset dir="${basedir}/source" prefix="${name}-src-${version}">
+			<tarfileset dir="${basedir}/source" prefix="app-src-${version}">
 				<exclude name="**/.svn/**" />
 				<exclude name="project.index" />
 				<exclude name=".project" />
@@ -27,7 +27,7 @@
 
 	<target name="package">
 		<tar destfile="${basedir}/build/${name}-${version}.tgz" compression="gzip">
-			<tarfileset dir="${basedir}/source" prefix="${name}-${version}">
+			<tarfileset dir="${basedir}/source" prefix="app-${version}">
 				<exclude name="**/.cvsignore" />
 				<exclude name="**/.svn/**" />
 				<exclude name="build/**" />

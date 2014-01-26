@@ -4,8 +4,8 @@
 	<definition>
 		<idname>dompdf</idname>
 		<release>
-			<version>1.0</version>
-			<date>2013/08/01</date>
+			<version>0.6.0-2</version>
+			<date>2014/01/26</date>
 			<changesfile>CHANGES</changesfile>
 		</release>
 		<description>DomPDF library</description>
@@ -13,17 +13,17 @@
 		<iconfile></iconfile>
 		<legal>
 			<author>
-				<name>Innoteam S.r.l.</name>
+				<name>Innoteam Srl</name>
 				<email>info@innoteam.it</email>
 				<web>http://www.innoteam.it/</web>
 			</author>
-			<copyright>Copyright (c) 2013 Innoteam S.r.l.</copyright>
+			<copyright></copyright>
 			<license>LGPL</license>
 			<licensefile>LICENSE.LGPL</licensefile>
 		</legal>
 		<support>
-			<supportemail>info@innoteam.it</supportemail>
-			<bugsemail>info@innoteam.it</bugsemail>
+			<supportemail>helpdesk@innoteam.it</supportemail>
+			<bugsemail>helpdesk@innoteam.it</bugsemail>
 			<maintainer>
 				<name>Innoteam</name>
 				<email>info@innoteam.it</email>
