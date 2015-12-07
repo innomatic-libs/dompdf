@@ -4,7 +4,7 @@
 	<definition>
 		<idname>dompdf</idname>
 		<release>
-			<version>0.6.0-2</version>
+			<version>0.6.1</version>
 			<date>2014/01/26</date>
 			<changesfile>CHANGES</changesfile>
 		</release>
@@ -36,5 +36,5 @@
 		<extras name="dompdf" />
 
 	</components>
-	
+
 </application>
